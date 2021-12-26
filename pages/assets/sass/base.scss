@@ -1,0 +1,104 @@
+@import "mixins.scss";
+
+* {
+    @include defaultfont();
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    nav {
+        padding: 1% 10%;
+        // border-top: 1px lightgrey solid;
+        border-bottom: 1px lightgrey solid;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li {
+                margin-left: 48px;
+                font-size: 24px;
+                // &:last-child{
+                //     margin-left: auto;
+                //     margin-right: 64px;
+                // }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }  
+    #title {
+        padding: 2% 10%;
+        margin: 0;
+        font-size: 36px;
+        font-weight: normal;
+    }  
+}
+
+footer {
+    max-width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+main {
+    margin-top: 2rem;
+    position: absolute;
+    @include centerizeX(800px);
+    line-height: 2rem;
+    .page-title {
+        font-size: 2rem;
+        font-weight: bold;
+        border-bottom: 1px solid lightgrey;
+        &::first-letter {
+            color: red;
+        }
+    }
+    .page-properties {
+        width: fit-content;
+        margin-left: auto;
+        color: grey;
+    }
+}
+
+a {
+    color: black;
+    &:visited {
+        color: inherit;
+    }
+    &:hover {
+        color: lightgrey;
+    }
+}
+
+p {
+    margin-top: 8px;
+}
+
+h2 {
+    width: fit-content;
+    border-bottom: 1px solid lightgrey;
+    margin: 0;
+}
+
+h3 {
+    width: fit-content;
+    border-bottom: 1px solid lightgrey;
+    margin: 0;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

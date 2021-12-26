@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<title>Blank | {{ .Title }}</title>
+
+{{ $style := resources.Get "sass/base.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+    MathJax = {
+        loader: {load: ['[tex]/physics']},
+        tex: {
+            inlineMath: [              
+                ['$', '$']
+            ],
+            displayMath: [             
+                ['\\[', '\\]']
+            ],
+            packages: {
+            '[+]': ['physics']
+            },
+        }
+    };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

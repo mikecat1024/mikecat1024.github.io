@@ -1,0 +1,9 @@
+@mixin centerizeX($width) {
+    width: $width;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@mixin defaultfont() {
+    font-family: 'Times New Roman', Times, serif;
+}

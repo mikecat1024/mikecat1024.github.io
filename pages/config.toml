@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "ja"
+title = "Blank"
+
+disableKinds = ["RSS", "sitemap"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
