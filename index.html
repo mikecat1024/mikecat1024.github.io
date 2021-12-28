@@ -7,7 +7,7 @@
 <title>Blank | home</title>
 
 
-<link rel="stylesheet" href="https://mikecat1024.github.io/sass/base.min.c43af3b0cc76756cc9923b3d812111cfb825ee415fa9dacfa4421cf2f49e59ee.css">
+<link rel="stylesheet" href="https://mikecat1024.github.io/sass/base.min.5da5e6ec03b30ec77b8918396bf16004f7805d0b29f905c8501026cf706f7607.css">
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script>
@@ -21,7 +21,7 @@
                 ['\[', '\]']
             ],
             packages: {
-            '[+]': ['physics']
+                '[+]': ['physics']
             },
         }
     };
@@ -29,14 +29,7 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRTNS0DXCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SRTNS0DXCZ');
-</script> 
+ 
     </head>
     <body>
         <header>
@@ -52,7 +45,17 @@
         <li>
             <a href="/notes">notes</a>
         </li>
-        
+        <li>
+            <a id="share" class="select">
+                <img src="/image/share_black_48dp.svg" alt="">
+            </a>
+            <ul id="dropdown-contents" class="hide">
+                <li>
+                    <a href="twitter://post?text=https%3a%2f%2fmikecat1024.github.io%2f&text=home%20%7C%20%e4%b8%89%e6%af%9b%e7%8c%ab%20%7C%20Blank%0a%40mikecat1024%0a&related=mikecat1024">share on Twitter</a>
+                    <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fmikecat1024.github.io%2f&text=home%20%7C%20%e4%b8%89%e6%af%9b%e7%8c%ab%20%7C%20Blank%0a%40mikecat1024%0a&related=mikecat1024">share on Twitter</a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </nav>
         </header>
@@ -60,7 +63,8 @@
             トップページって何を書いたらいいんだろうね。
         </main>
         <footer>
-            
+            <script type="text/javascript"  src="/js/dropdown.js"></script>
+
         </footer>
     </body>
 </html>
