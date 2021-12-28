@@ -8,3 +8,8 @@ document.addEventListener('click', (e) => {
         dropdown_contents.classList.add('hide')
     }
 })
+
+if (window.matchMedia && window.matchMedia('(max-device-width: 1025px)').matches) {
+    document.getElementById("share-web").classList.toggle("hide")
+    document.getElementById("share-app").classList.toggle("hide")
+}
