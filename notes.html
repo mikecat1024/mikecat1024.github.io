@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       {{ partial "head" . }} 
+    </head>
+    <body>
+        <header>
+            {{ partial "header" . }}
+        </header>
+        <main>
+            <h2>ノートの一覧</h2>
+            <ul>
+            {{ range .Pages }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+            </ul>
+        </main>
+        <footer>
+            {{ partial "footer" . }}
+        </footer>
+    </body>
+</html>
