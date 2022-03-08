@@ -1,1 +1,0 @@
-@charset "UTF-8";.theorem{margin:16px 0 16px 1rem}.theorem::before{margin-left:-1rem;counter-increment:number;font-weight:700;white-space:pre;content:attr(type)" " counter(number)". （" attr(name)"）\a"}

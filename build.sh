@@ -1,5 +1,5 @@
-rm -r articles image notes sass
-rm index.html
+# rm -r articles image notes sass
+# rm index.html
 
 cd pages
 hugo
